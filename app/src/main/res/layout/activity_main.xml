@@ -1,0 +1,3166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#F4A460">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/_080x2280_wallpaper_054"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:text="ПОЛЕ ПРОТИВНИКА"
+        android:background="#F4A460"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        app:layout_constraintEnd_toStartOf="@id/END_MARGIN"
+        app:layout_constraintBottom_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+
+    <TextView
+        android:text="ВАШЕ ПОЛЕ"
+        android:background="#F4A460"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        app:layout_constraintEnd_toStartOf="@id/END_MARGIN"
+        app:layout_constraintTop_toTopOf="@id/TOP_MARGIN2"
+        app:layout_constraintBottom_toBottomOf="@id/TOP_MARGIN2"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <View
+        android:id="@+id/TOP_MARGIN"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </View>
+
+
+
+    <View
+        android:id="@+id/TOP_MARGIN2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/v0xJ"
+        app:layout_constraintStart_toStartOf="parent">
+    </View>
+
+
+
+    <View
+        android:id="@+id/TOP_MARGIN3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/v20xJ"
+        app:layout_constraintStart_toStartOf="parent">
+    </View>
+
+
+
+    <View
+        android:id="@+id/START_MARGIN"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </View>
+
+
+
+    <View
+        android:id="@+id/END_MARGIN"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </View>
+
+
+
+
+    <!--ПОЛЕ1-->
+
+
+
+    <!--КООРДИНАТЫ-->
+
+    <view
+        android:id="@+id/v0x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  A"
+        android:id="@+id/v1x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v0x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  B"
+        android:id="@+id/v2x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v1x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  C"
+        android:id="@+id/v3x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v2x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  D"
+        android:id="@+id/v4x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v3x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  E"
+        android:id="@+id/v5x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v4x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+>
+    </view>
+
+    <view
+        android:text="  F"
+        android:id="@+id/v6x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v5x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="  G"
+        android:id="@+id/v7x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v6x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  H"
+        android:id="@+id/v8x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v7x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   I"
+        android:id="@+id/v9x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v8x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  J"
+        android:id="@+id/v10x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toEndOf="@id/v9x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="   1"
+        android:id="@+id/v0xA"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0x0"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="   2"
+        android:id="@+id/v0xB"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xA"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   3"
+        android:id="@+id/v0xC"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xB"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   4"
+        android:id="@+id/v0xD"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xC"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   5"
+        android:id="@+id/v0xE"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xD"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   6"
+        android:id="@+id/v0xF"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xE"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   7"
+        android:id="@+id/v0xG"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xF"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   8"
+        android:id="@+id/v0xH"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xG"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   9"
+        android:id="@+id/v0xI"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xH"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  10"
+        android:id="@+id/v0xJ"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v0xI"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--КООРДИНАТЫ-->
+
+
+
+
+
+    <!--СЕТКА 1-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v1x0"
+        app:layout_constraintStart_toEndOf="@id/v0xA"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx1"
+        app:layout_constraintStart_toEndOf="@id/v0xB"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx1"
+        app:layout_constraintStart_toEndOf="@id/v0xC"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx1"
+        app:layout_constraintStart_toEndOf="@id/v0xD"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx1"
+        app:layout_constraintStart_toEndOf="@id/v0xE"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx1"
+        app:layout_constraintStart_toEndOf="@id/v0xF"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx1"
+        app:layout_constraintStart_toEndOf="@id/v0xG"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx1"
+        app:layout_constraintStart_toEndOf="@id/v0xH"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx1"
+        app:layout_constraintStart_toEndOf="@id/v0xI"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx1"
+        app:layout_constraintStart_toEndOf="@id/v0xJ"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 1-->
+
+
+
+
+
+
+
+    <!--СЕТКА 2-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2x0"
+        app:layout_constraintStart_toEndOf="@id/vAx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx2"
+        app:layout_constraintStart_toEndOf="@id/vBx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx2"
+        app:layout_constraintStart_toEndOf="@id/vCx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx2"
+        app:layout_constraintStart_toEndOf="@id/vDx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx2"
+        app:layout_constraintStart_toEndOf="@id/vEx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx2"
+        app:layout_constraintStart_toEndOf="@id/vFx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx2"
+        app:layout_constraintStart_toEndOf="@id/vGx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx2"
+        app:layout_constraintStart_toEndOf="@id/vHx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx2"
+        app:layout_constraintStart_toEndOf="@id/vIx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx2"
+        app:layout_constraintStart_toEndOf="@id/vJx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 2-->
+
+
+
+    <!--СЕТКА 3-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v3x0"
+        app:layout_constraintStart_toEndOf="@id/vAx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx3"
+        app:layout_constraintStart_toEndOf="@id/vBx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx3"
+        app:layout_constraintStart_toEndOf="@id/vCx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx3"
+        app:layout_constraintStart_toEndOf="@id/vDx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx3"
+        app:layout_constraintStart_toEndOf="@id/vEx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx3"
+        app:layout_constraintStart_toEndOf="@id/vFx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx3"
+        app:layout_constraintStart_toEndOf="@id/vGx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx3"
+        app:layout_constraintStart_toEndOf="@id/vHx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx3"
+        app:layout_constraintStart_toEndOf="@id/vIx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx3"
+        app:layout_constraintStart_toEndOf="@id/vJx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 3-->
+
+
+
+
+    <!--СЕТКА 4-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v4x0"
+        app:layout_constraintStart_toEndOf="@id/vAx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx4"
+        app:layout_constraintStart_toEndOf="@id/vBx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx4"
+        app:layout_constraintStart_toEndOf="@id/vCx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx4"
+        app:layout_constraintStart_toEndOf="@id/vDx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx4"
+        app:layout_constraintStart_toEndOf="@id/vEx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx4"
+        app:layout_constraintStart_toEndOf="@id/vFx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx4"
+        app:layout_constraintStart_toEndOf="@id/vGx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx4"
+        app:layout_constraintStart_toEndOf="@id/vHx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx4"
+        app:layout_constraintStart_toEndOf="@id/vIx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx4"
+        app:layout_constraintStart_toEndOf="@id/vJx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 4-->
+
+
+
+
+
+    <!--СЕТКА 5-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v5x0"
+        app:layout_constraintStart_toEndOf="@id/vAx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx5"
+        app:layout_constraintStart_toEndOf="@id/vBx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx5"
+        app:layout_constraintStart_toEndOf="@id/vCx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx5"
+        app:layout_constraintStart_toEndOf="@id/vDx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx5"
+        app:layout_constraintStart_toEndOf="@id/vEx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx5"
+        app:layout_constraintStart_toEndOf="@id/vFx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx5"
+        app:layout_constraintStart_toEndOf="@id/vGx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx5"
+        app:layout_constraintStart_toEndOf="@id/vHx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx5"
+        app:layout_constraintStart_toEndOf="@id/vIx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx5"
+        app:layout_constraintStart_toEndOf="@id/vJx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 5-->
+
+
+
+
+
+    <!--СЕТКА 6-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v6x0"
+        app:layout_constraintStart_toEndOf="@id/vAx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx6"
+        app:layout_constraintStart_toEndOf="@id/vBx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx6"
+        app:layout_constraintStart_toEndOf="@id/vCx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx6"
+        app:layout_constraintStart_toEndOf="@id/vDx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx6"
+        app:layout_constraintStart_toEndOf="@id/vEx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx6"
+        app:layout_constraintStart_toEndOf="@id/vFx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx6"
+        app:layout_constraintStart_toEndOf="@id/vGx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx6"
+        app:layout_constraintStart_toEndOf="@id/vHx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx6"
+        app:layout_constraintStart_toEndOf="@id/vIx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx6"
+        app:layout_constraintStart_toEndOf="@id/vJx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 6-->
+
+
+
+    <!--СЕТКА 7-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v7x0"
+        app:layout_constraintStart_toEndOf="@id/vAx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx7"
+        app:layout_constraintStart_toEndOf="@id/vBx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx7"
+        app:layout_constraintStart_toEndOf="@id/vCx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx7"
+        app:layout_constraintStart_toEndOf="@id/vDx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx7"
+        app:layout_constraintStart_toEndOf="@id/vEx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx7"
+        app:layout_constraintStart_toEndOf="@id/vFx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx7"
+        app:layout_constraintStart_toEndOf="@id/vGx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx7"
+        app:layout_constraintStart_toEndOf="@id/vHx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx7"
+        app:layout_constraintStart_toEndOf="@id/vIx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx7"
+        app:layout_constraintStart_toEndOf="@id/vJx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 7-->
+
+
+
+    <!--СЕТКА 8-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v8x0"
+        app:layout_constraintStart_toEndOf="@id/vAx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx8"
+        app:layout_constraintStart_toEndOf="@id/vBx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx8"
+        app:layout_constraintStart_toEndOf="@id/vCx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx8"
+        app:layout_constraintStart_toEndOf="@id/vDx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx8"
+        app:layout_constraintStart_toEndOf="@id/vEx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx8"
+        app:layout_constraintStart_toEndOf="@id/vFx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx8"
+        app:layout_constraintStart_toEndOf="@id/vGx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx8"
+        app:layout_constraintStart_toEndOf="@id/vHx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx8"
+        app:layout_constraintStart_toEndOf="@id/vIx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx8"
+        app:layout_constraintStart_toEndOf="@id/vJx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 8-->
+
+
+
+    <!--СЕТКА 9-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v9x0"
+        app:layout_constraintStart_toEndOf="@id/vAx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx9"
+        app:layout_constraintStart_toEndOf="@id/vBx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx9"
+        app:layout_constraintStart_toEndOf="@id/vCx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx9"
+        app:layout_constraintStart_toEndOf="@id/vDx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx9"
+        app:layout_constraintStart_toEndOf="@id/vEx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx9"
+        app:layout_constraintStart_toEndOf="@id/vFx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx9"
+        app:layout_constraintStart_toEndOf="@id/vGx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx9"
+        app:layout_constraintStart_toEndOf="@id/vHx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx9"
+        app:layout_constraintStart_toEndOf="@id/vIx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx9"
+        app:layout_constraintStart_toEndOf="@id/vJx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 9-->
+
+
+
+    <!--СЕТКА 10-->
+
+    <view
+        android:text="  "
+        android:id="@+id/vAx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v10x0"
+        app:layout_constraintStart_toEndOf="@id/vAx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vBx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vAx10"
+        app:layout_constraintStart_toEndOf="@id/vBx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vCx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vBx10"
+        app:layout_constraintStart_toEndOf="@id/vCx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vDx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vCx10"
+        app:layout_constraintStart_toEndOf="@id/vDx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vEx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vDx10"
+        app:layout_constraintStart_toEndOf="@id/vEx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vFx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vEx10"
+        app:layout_constraintStart_toEndOf="@id/vFx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vGx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vFx10"
+        app:layout_constraintStart_toEndOf="@id/vGx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vHx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vGx10"
+        app:layout_constraintStart_toEndOf="@id/vHx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vIx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vHx10"
+        app:layout_constraintStart_toEndOf="@id/vIx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/vJx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/vIx10"
+        app:layout_constraintStart_toEndOf="@id/vJx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 10-->
+
+
+    <!--ПОЛЕ1-->
+
+
+
+
+    <!--ПОЛЕ2-->
+
+
+
+    <!--КООРДИНАТЫ-->
+
+    <view
+        android:id="@+id/v20x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  A"
+        android:id="@+id/v21x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v20x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  B"
+        android:id="@+id/v22x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v21x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  C"
+        android:id="@+id/v23x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v22x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  D"
+        android:id="@+id/v24x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v23x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  E"
+        android:id="@+id/v25x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v24x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+        >
+    </view>
+
+    <view
+        android:text="  F"
+        android:id="@+id/v26x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v25x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="  G"
+        android:id="@+id/v27x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v26x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  H"
+        android:id="@+id/v28x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v27x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   I"
+        android:id="@+id/v29x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v28x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  J"
+        android:id="@+id/v210x0"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintStart_toEndOf="@id/v29x0"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="   1"
+        android:id="@+id/v20xA"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20x0"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="   2"
+        android:id="@+id/v20xB"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xA"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   3"
+        android:id="@+id/v20xC"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xB"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   4"
+        android:id="@+id/v20xD"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xC"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   5"
+        android:id="@+id/v20xE"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xD"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   6"
+        android:id="@+id/v20xF"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xE"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   7"
+        android:id="@+id/v20xG"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xF"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   8"
+        android:id="@+id/v20xH"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xG"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   9"
+        android:id="@+id/v20xI"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xH"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  10"
+        android:id="@+id/v20xJ"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v20xI"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--КООРДИНАТЫ-->
+
+
+
+    <!--СЕТКА 1-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v21x0"
+        app:layout_constraintStart_toEndOf="@id/v20xA"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax1"
+        app:layout_constraintStart_toEndOf="@id/v20xB"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx1"
+        app:layout_constraintStart_toEndOf="@id/v20xC"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx1"
+        app:layout_constraintStart_toEndOf="@id/v20xD"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx1"
+        app:layout_constraintStart_toEndOf="@id/v20xE"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex1"
+        app:layout_constraintStart_toEndOf="@id/v20xF"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx1"
+        app:layout_constraintStart_toEndOf="@id/v20xG"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx1"
+        app:layout_constraintStart_toEndOf="@id/v20xH"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx1"
+        app:layout_constraintStart_toEndOf="@id/v20xI"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx1"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix1"
+        app:layout_constraintStart_toEndOf="@id/v20xJ"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 1-->
+
+
+
+    <!--СЕТКА 2-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v22x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="   "
+        android:id="@+id/v2Bx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax2"
+        app:layout_constraintStart_toEndOf="@id/v2Bx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx2"
+        app:layout_constraintStart_toEndOf="@id/v2Cx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx2"
+        app:layout_constraintStart_toEndOf="@id/v2Dx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx2"
+        app:layout_constraintStart_toEndOf="@id/v2Ex1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex2"
+        app:layout_constraintStart_toEndOf="@id/v2Fx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx2"
+        app:layout_constraintStart_toEndOf="@id/v2Gx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx2"
+        app:layout_constraintStart_toEndOf="@id/v2Hx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx2"
+        app:layout_constraintStart_toEndOf="@id/v2Ix1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx2"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix2"
+        app:layout_constraintStart_toEndOf="@id/v2Jx1"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 2-->
+
+
+
+    <!--СЕТКА 3-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v23x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax3"
+        app:layout_constraintStart_toEndOf="@id/v2Bx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx3"
+        app:layout_constraintStart_toEndOf="@id/v2Cx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx3"
+        app:layout_constraintStart_toEndOf="@id/v2Dx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx3"
+        app:layout_constraintStart_toEndOf="@id/v2Ex2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex3"
+        app:layout_constraintStart_toEndOf="@id/v2Fx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx3"
+        app:layout_constraintStart_toEndOf="@id/v2Gx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx3"
+        app:layout_constraintStart_toEndOf="@id/v2Hx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx3"
+        app:layout_constraintStart_toEndOf="@id/v2Ix2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx3"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix3"
+        app:layout_constraintStart_toEndOf="@id/v2Jx2"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 3-->
+
+
+
+
+    <!--СЕТКА 4-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v24x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax4"
+        app:layout_constraintStart_toEndOf="@id/v2Bx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx4"
+        app:layout_constraintStart_toEndOf="@id/v2Cx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx4"
+        app:layout_constraintStart_toEndOf="@id/v2Dx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx4"
+        app:layout_constraintStart_toEndOf="@id/v2Ex3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex4"
+        app:layout_constraintStart_toEndOf="@id/v2Fx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx4"
+        app:layout_constraintStart_toEndOf="@id/v2Gx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx4"
+        app:layout_constraintStart_toEndOf="@id/v2Hx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx4"
+        app:layout_constraintStart_toEndOf="@id/v2Ix3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx4"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix4"
+        app:layout_constraintStart_toEndOf="@id/v2Jx3"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 4-->
+
+
+
+    <!--СЕТКА 5-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v25x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax5"
+        app:layout_constraintStart_toEndOf="@id/v2Bx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx5"
+        app:layout_constraintStart_toEndOf="@id/v2Cx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx5"
+        app:layout_constraintStart_toEndOf="@id/v2Dx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx5"
+        app:layout_constraintStart_toEndOf="@id/v2Ex4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex5"
+        app:layout_constraintStart_toEndOf="@id/v2Fx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx5"
+        app:layout_constraintStart_toEndOf="@id/v2Gx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx5"
+        app:layout_constraintStart_toEndOf="@id/v2Hx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx5"
+        app:layout_constraintStart_toEndOf="@id/v2Ix4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx5"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix5"
+        app:layout_constraintStart_toEndOf="@id/v2Jx4"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 5-->
+
+
+
+    <!--СЕТКА 6-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v26x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax6"
+        app:layout_constraintStart_toEndOf="@id/v2Bx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx6"
+        app:layout_constraintStart_toEndOf="@id/v2Cx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx6"
+        app:layout_constraintStart_toEndOf="@id/v2Dx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx6"
+        app:layout_constraintStart_toEndOf="@id/v2Ex5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex6"
+        app:layout_constraintStart_toEndOf="@id/v2Fx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx6"
+        app:layout_constraintStart_toEndOf="@id/v2Gx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx6"
+        app:layout_constraintStart_toEndOf="@id/v2Hx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx6"
+        app:layout_constraintStart_toEndOf="@id/v2Ix5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx6"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix6"
+        app:layout_constraintStart_toEndOf="@id/v2Jx5"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 6-->
+
+
+
+    <!--СЕТКА 7-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v27x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax7"
+        app:layout_constraintStart_toEndOf="@id/v2Bx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx7"
+        app:layout_constraintStart_toEndOf="@id/v2Cx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx7"
+        app:layout_constraintStart_toEndOf="@id/v2Dx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx7"
+        app:layout_constraintStart_toEndOf="@id/v2Ex6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex7"
+        app:layout_constraintStart_toEndOf="@id/v2Fx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx7"
+        app:layout_constraintStart_toEndOf="@id/v2Gx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx7"
+        app:layout_constraintStart_toEndOf="@id/v2Hx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx7"
+        app:layout_constraintStart_toEndOf="@id/v2Ix6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx7"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix7"
+        app:layout_constraintStart_toEndOf="@id/v2Jx6"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 7-->
+
+
+
+    <!--СЕТКА 8-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v28x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax8"
+        app:layout_constraintStart_toEndOf="@id/v2Bx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx8"
+        app:layout_constraintStart_toEndOf="@id/v2Cx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx8"
+        app:layout_constraintStart_toEndOf="@id/v2Dx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx8"
+        app:layout_constraintStart_toEndOf="@id/v2Ex7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex8"
+        app:layout_constraintStart_toEndOf="@id/v2Fx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx8"
+        app:layout_constraintStart_toEndOf="@id/v2Gx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx8"
+        app:layout_constraintStart_toEndOf="@id/v2Hx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx8"
+        app:layout_constraintStart_toEndOf="@id/v2Ix7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx8"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix8"
+        app:layout_constraintStart_toEndOf="@id/v2Jx7"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 8-->
+
+
+
+    <!--СЕТКА 9-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v29x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax9"
+        app:layout_constraintStart_toEndOf="@id/v2Bx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx9"
+        app:layout_constraintStart_toEndOf="@id/v2Cx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx9"
+        app:layout_constraintStart_toEndOf="@id/v2Dx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx9"
+        app:layout_constraintStart_toEndOf="@id/v2Ex8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex9"
+        app:layout_constraintStart_toEndOf="@id/v2Fx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx9"
+        app:layout_constraintStart_toEndOf="@id/v2Gx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx9"
+        app:layout_constraintStart_toEndOf="@id/v2Hx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx9"
+        app:layout_constraintStart_toEndOf="@id/v2Ix8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx9"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix9"
+        app:layout_constraintStart_toEndOf="@id/v2Jx8"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 9-->
+
+
+
+    <!--СЕТКА 10-->
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ax10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v210x0"
+        app:layout_constraintStart_toEndOf="@id/v2Ax9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Bx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ax10"
+        app:layout_constraintStart_toEndOf="@id/v2Bx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Cx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Bx10"
+        app:layout_constraintStart_toEndOf="@id/v2Cx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Dx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Cx10"
+        app:layout_constraintStart_toEndOf="@id/v2Dx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ex10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Dx10"
+        app:layout_constraintStart_toEndOf="@id/v2Ex9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Fx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ex10"
+        app:layout_constraintStart_toEndOf="@id/v2Fx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Gx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Fx10"
+        app:layout_constraintStart_toEndOf="@id/v2Gx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Hx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Gx10"
+        app:layout_constraintStart_toEndOf="@id/v2Hx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Ix10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Hx10"
+        app:layout_constraintStart_toEndOf="@id/v2Ix9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <view
+        android:text="  "
+        android:id="@+id/v2Jx10"
+        class="android.widget.TextView"
+        app:layout_constraintTop_toBottomOf="@id/v2Ix10"
+        app:layout_constraintStart_toEndOf="@id/v2Jx9"
+        android:background="@color/block_color"
+        android:layout_margin="@dimen/block_margin"
+        android:layout_width="@dimen/block"
+        android:layout_height="@dimen/block">
+    </view>
+
+    <!--СЕТКА 10-->
+
+
+    <!--ПОЛЕ2-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
