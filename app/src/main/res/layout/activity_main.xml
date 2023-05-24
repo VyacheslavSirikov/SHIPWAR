@@ -364,7 +364,7 @@
     <!--СЕТКА 1-->
 
     <view
-        android:text="  "
+        android:text="@string/A1"
         android:id="@+id/vAx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v1x0"

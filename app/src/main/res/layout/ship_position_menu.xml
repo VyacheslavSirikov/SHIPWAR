@@ -13,6 +13,19 @@
         app:srcCompat="@drawable/_080x2280_wallpaper_054"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:text="ИГРОК 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/TOP_MARGIN"
+        app:layout_constraintStart_toStartOf="@id/TOP_MARGIN"
+        app:layout_constraintEnd_toEndOf="@id/TOP_MARGIN"
+        app:layout_constraintBottom_toBottomOf="@id/TOP_MARGIN"
+        android:background="#F4A460">
+    </TextView>
+
+
+
     <View
         android:id="@+id/TOP_MARGIN"
         android:layout_width="match_parent"
@@ -41,7 +54,7 @@
 
     <View
         android:id="@+id/START_MARGIN"
-        android:layout_width="60dp"
+        android:layout_width="86dp"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -49,7 +62,7 @@
 
     <View
         android:id="@+id/END_MARGIN"
-        android:layout_width="60dp"
+        android:layout_width="86dp"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -914,7 +927,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="   "
         android:id="@+id/v2Ex5"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Dx5"
