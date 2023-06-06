@@ -1,17 +1,14 @@
 package com.example.shipwar;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-//gh
 
 public class activity_main extends AppCompatActivity implements View.OnClickListener {
     TextView[][] textViews1 = new TextView[10][10];
