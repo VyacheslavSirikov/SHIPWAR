@@ -91,14 +91,14 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
         // Определите, какая ячейка была нажата
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                if (view == textViews1[i][j]) {
-                    // Ячейка textViews1[i][j] была нажата
+                if (view == textViews2[i][j]) {
+                    // Ячейка textViews2[i][j] была нажата
                     // Выполните нужные действия здесь
                     if (values2[i][j] == 1) {
-                        textViews1[i][j].setBackgroundColor(Color.RED);
+                        textViews2[i][j].setBackgroundColor(Color.RED);
                         counter1--;
                     } else {
-                        textViews1[i][j].setBackgroundColor(Color.GRAY);
+                        textViews2[i][j].setBackgroundColor(Color.GRAY);
                     }
                     values3[i][j] = values2[i][j];
 
@@ -108,14 +108,14 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                         startActivity(intent);
                     }
                     return;
-                } else if (view == textViews2[i][j]) {
-                    // Ячейка textViews2[i][j] была нажата
+                } else if (view == textViews1[i][j]) {
+                    // Ячейка textViews1[i][j] была нажата
                     // Выполните нужные действия здесь
                     if (values[i][j] == 1) {
-                        textViews2[i][j].setBackgroundColor(Color.RED);
+                        textViews1[i][j].setBackgroundColor(Color.RED);
                         counter2--;
                     } else {
-                        textViews2[i][j].setBackgroundColor(Color.GRAY);
+                        textViews1[i][j].setBackgroundColor(Color.GRAY);
                     }
                     values4[i][j] = values[i][j];
 
@@ -131,36 +131,28 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
     }
 
     private void updateTextViewColors() {
-        if (eye1Pressed) {
-            for (int i = 0; i < 10; i++) {
-                for (int j = 0; j < 10; j++) {
-                    if (values2[i][j] == 1) {
-                        textViews2[i][j].setBackgroundColor(Color.BLACK);
-                    }
-                }
-            }
-        } else {
-            for (int i = 0; i < 10; i++) {
-                for (int j = 0; j < 10; j++) {
-                    if (values2[i][j] == 1) {
+        // Определите, какой цвет использовать для закрашенных ячеек
+        int colorForEye1Pressed = Color.BLACK; // Цвет для eye1Pressed = true
+        int colorForEye2Pressed = Color.BLACK; // Цвет для eye2Pressed = true
+
+        // Обновите цвета ячеек
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (values2[i][j] == 1) {
+                    if (eye1Pressed) {
+                        textViews2[i][j].setBackgroundColor(colorForEye1Pressed);
+                    } else if (values3[i][j] == 1) {
+                        textViews2[i][j].setBackgroundColor(Color.RED);
+                    } else {
                         textViews2[i][j].setBackgroundColor(Color.WHITE);
                     }
                 }
-            }
-        }
-
-        if (eye2Pressed) {
-            for (int i = 0; i < 10; i++) {
-                for (int j = 0; j < 10; j++) {
-                    if (values[i][j] == 1) {
-                        textViews1[i][j].setBackgroundColor(Color.BLACK);
-                    }
-                }
-            }
-        } else {
-            for (int i = 0; i < 10; i++) {
-                for (int j = 0; j < 10; j++) {
-                    if (values[i][j] == 1) {
+                if (values[i][j] == 1) {
+                    if (eye2Pressed) {
+                        textViews1[i][j].setBackgroundColor(colorForEye2Pressed);
+                    } else if (values4[i][j] == 1) {
+                        textViews1[i][j].setBackgroundColor(Color.RED);
+                    } else {
                         textViews1[i][j].setBackgroundColor(Color.WHITE);
                     }
                 }
