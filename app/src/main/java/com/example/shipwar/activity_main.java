@@ -15,6 +15,8 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
     int[][] values4 = new int[10][10];
     int[][] values2;
     int[][] values;
+    int counter1 = 4;
+    int counter2 = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +53,6 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
 
-        int counter1 = 20;
-        int counter2 = 20;
-
         // Определите, какая ячейка была нажата
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -68,7 +67,7 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                     }
                     values3[i][j] = values2[i][j];
 
-                    if (counter1 == 0) {
+                    if (counter1 <= 0) {
                         // Переход на класс WinPlayer1
                         Intent intent = new Intent(activity_main.this, win_player1.class);
                         startActivity(intent);
@@ -85,7 +84,7 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                     }
                     values4[i][j] = values[i][j];
 
-                    if (counter2 == 0) {
+                    if (counter2 <= 0) {
                         // Переход на класс WinPlayer2
                         Intent intent = new Intent(activity_main.this, win_player2.class);
                         startActivity(intent);
