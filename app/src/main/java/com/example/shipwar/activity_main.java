@@ -1,9 +1,13 @@
 package com.example.shipwar;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +22,8 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
     int[][] values;
     int counter1 = 20;
     int counter2 = 20;
+    boolean eye1Pressed = false;
+    boolean eye2Pressed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +45,6 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
             }
         }
 
-
         for (int i = 0; i < 10; i++) {
             char letter = (char) ('A' + i);
             for (int j = 0; j < 10; j++) {
@@ -49,11 +54,40 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                 values4[i][j] = 0;
             }
         }
+
+        ImageButton eye1Button = findViewById(R.id.eye1);
+        eye1Button.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    eye1Pressed = true;
+                    updateTextViewColors();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    eye1Pressed = false;
+                    updateTextViewColors();
+                }
+                return true;
+            }
+        });
+
+        ImageButton eye2Button = findViewById(R.id.eye2);
+        eye2Button.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    eye2Pressed = true;
+                    updateTextViewColors();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    eye2Pressed = false;
+                    updateTextViewColors();
+                }
+                return true;
+            }
+        });
     }
 
     @Override
     public void onClick(View view) {
-
         // Определите, какая ячейка была нажата
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -62,7 +96,7 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                     // Выполните нужные действия здесь
                     if (values2[i][j] == 1) {
                         textViews1[i][j].setBackgroundColor(Color.RED);
-                        counter1 = counter1 - 1;
+                        counter1--;
                     } else {
                         textViews1[i][j].setBackgroundColor(Color.GRAY);
                     }
@@ -79,7 +113,7 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                     // Выполните нужные действия здесь
                     if (values[i][j] == 1) {
                         textViews2[i][j].setBackgroundColor(Color.RED);
-                        counter2 = counter2 - 1;
+                        counter2--;
                     } else {
                         textViews2[i][j].setBackgroundColor(Color.GRAY);
                     }
@@ -91,6 +125,44 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
                         startActivity(intent);
                     }
                     return;
+                }
+            }
+        }
+    }
+
+    private void updateTextViewColors() {
+        if (eye1Pressed) {
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 10; j++) {
+                    if (values2[i][j] == 1) {
+                        textViews2[i][j].setBackgroundColor(Color.BLACK);
+                    }
+                }
+            }
+        } else {
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 10; j++) {
+                    if (values2[i][j] == 1) {
+                        textViews2[i][j].setBackgroundColor(Color.WHITE);
+                    }
+                }
+            }
+        }
+
+        if (eye2Pressed) {
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 10; j++) {
+                    if (values[i][j] == 1) {
+                        textViews1[i][j].setBackgroundColor(Color.BLACK);
+                    }
+                }
+            }
+        } else {
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 10; j++) {
+                    if (values[i][j] == 1) {
+                        textViews1[i][j].setBackgroundColor(Color.WHITE);
+                    }
                 }
             }
         }

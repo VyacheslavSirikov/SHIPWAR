@@ -3162,5 +3162,30 @@
 
 
     <!--ПОЛЕ2-->
+    <ImageButton
+        android:id="@+id/eye2"
+        android:background="@color/white"
+        android:src="@drawable/ic_action_name"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
+        app:layout_constraintEnd_toEndOf="@id/END_MARGIN"
+        app:layout_constraintStart_toStartOf="@id/END_MARGIN"
+        app:layout_constraintBottom_toTopOf="@id/TOP_MARGIN2"
+        tools:ignore="MissingConstraints">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/eye1"
+        android:background="@color/white"
+        android:src="@drawable/ic_action_name"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN2"
+        app:layout_constraintEnd_toEndOf="@id/END_MARGIN"
+        app:layout_constraintStart_toStartOf="@id/END_MARGIN"
+        app:layout_constraintBottom_toTopOf="@id/TOP_MARGIN3"
+        tools:ignore="MissingConstraints">
+    </ImageButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
