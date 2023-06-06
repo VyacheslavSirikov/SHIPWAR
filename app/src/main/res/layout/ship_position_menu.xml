@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#F4A460">
+    android:background="#F4A460"
+    tools:context=".ship_position_menu">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -54,7 +55,7 @@
 
     <View
         android:id="@+id/START_MARGIN"
-        android:layout_width="86dp"
+        android:layout_width="60dp"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -62,7 +63,7 @@
 
     <View
         android:id="@+id/END_MARGIN"
-        android:layout_width="86dp"
+        android:layout_width="60dp"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -83,25 +84,27 @@
         app:layout_constraintEnd_toStartOf="@id/END_MARGIN">
     </TextView>
 
-    <Button
-        android:text="НАЧАТЬ"
-        android:textSize="20dp"
-        android:background="#F4A460"
-        android:id="@+id/START_BUTTON2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
-        app:layout_constraintEnd_toStartOf="@id/END_MARGIN"
-        app:layout_constraintTop_toTopOf="@id/TOP_MARGIN3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints">
-    </Button>
-
     <!--ПОЛЕ1-->
 
 
 
     <!--КООРДИНАТЫ-->
+
+    <Button
+        android:id="@+id/START_BUTTON2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F4A460"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/END_MARGIN"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@id/START_MARGIN"
+        app:layout_constraintTop_toTopOf="@id/TOP_MARGIN3"
+        app:layout_constraintVertical_bias="0.512"
+        tools:ignore="MissingConstraints">
+    </Button>
 
     <view
         android:id="@+id/v20x0"
@@ -115,7 +118,7 @@
     </view>
 
     <view
-        android:text="  A"
+        android:text="  1"
         android:id="@+id/v21x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -127,7 +130,7 @@
     </view>
 
     <view
-        android:text="  B"
+        android:text="  2"
         android:id="@+id/v22x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -139,7 +142,7 @@
     </view>
 
     <view
-        android:text="  C"
+        android:text="  3"
         android:id="@+id/v23x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -151,7 +154,7 @@
     </view>
 
     <view
-        android:text="  D"
+        android:text="  4"
         android:id="@+id/v24x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -163,7 +166,7 @@
     </view>
 
     <view
-        android:text="  E"
+        android:text="  5"
         android:id="@+id/v25x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -176,7 +179,7 @@
     </view>
 
     <view
-        android:text="  F"
+        android:text="  6"
         android:id="@+id/v26x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -189,7 +192,7 @@
     </view>
 
     <view
-        android:text="  G"
+        android:text="  7"
         android:id="@+id/v27x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -201,7 +204,7 @@
     </view>
 
     <view
-        android:text="  H"
+        android:text="  8"
         android:id="@+id/v28x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -213,7 +216,7 @@
     </view>
 
     <view
-        android:text="   I"
+        android:text="   9"
         android:id="@+id/v29x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -225,7 +228,7 @@
     </view>
 
     <view
-        android:text=" J"
+        android:text=" 10"
         android:id="@+id/v210x0"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/TOP_MARGIN"
@@ -238,7 +241,7 @@
     </view>
 
     <view
-        android:text="   1"
+        android:text="   A"
         android:id="@+id/v20xA"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20x0"
@@ -251,7 +254,7 @@
     </view>
 
     <view
-        android:text="   2"
+        android:text="   B"
         android:id="@+id/v20xB"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xA"
@@ -263,7 +266,7 @@
     </view>
 
     <view
-        android:text="   3"
+        android:text="   C"
         android:id="@+id/v20xC"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xB"
@@ -275,7 +278,7 @@
     </view>
 
     <view
-        android:text="   4"
+        android:text="   D"
         android:id="@+id/v20xD"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xC"
@@ -287,7 +290,7 @@
     </view>
 
     <view
-        android:text="   5"
+        android:text="   E"
         android:id="@+id/v20xE"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xD"
@@ -299,7 +302,7 @@
     </view>
 
     <view
-        android:text="   6"
+        android:text="   F"
         android:id="@+id/v20xF"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xE"
@@ -311,7 +314,7 @@
     </view>
 
     <view
-        android:text="   7"
+        android:text="   G"
         android:id="@+id/v20xG"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xF"
@@ -323,7 +326,7 @@
     </view>
 
     <view
-        android:text="   8"
+        android:text="   H"
         android:id="@+id/v20xH"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xG"
@@ -335,7 +338,7 @@
     </view>
 
     <view
-        android:text="   9"
+        android:text="   I"
         android:id="@+id/v20xI"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xH"
@@ -347,7 +350,7 @@
     </view>
 
     <view
-        android:text="  10"
+        android:text="  J"
         android:id="@+id/v20xJ"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v20xI"
@@ -367,19 +370,19 @@
     <!--СЕТКА 1-->
 
     <view
-        android:text="  "
+        android:text="@string/A1_1"
         android:id="@+id/v2Ax1"
         class="android.widget.TextView"
-        app:layout_constraintTop_toBottomOf="@id/v21x0"
-        app:layout_constraintStart_toEndOf="@id/v20xA"
-        android:background="@color/block_color"
-        android:layout_margin="@dimen/block_margin"
         android:layout_width="@dimen/block"
-        android:layout_height="@dimen/block">
+        android:layout_height="@dimen/block"
+        android:layout_margin="@dimen/block_margin"
+        android:background="@color/block_color"
+        app:layout_constraintStart_toEndOf="@id/v20xA"
+        app:layout_constraintTop_toBottomOf="@id/v21x0">
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A2_1"
         android:id="@+id/v2Bx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ax1"
@@ -392,7 +395,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A3_1"
         android:id="@+id/v2Cx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Bx1"
@@ -404,7 +407,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A4_1"
         android:id="@+id/v2Dx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Cx1"
@@ -416,7 +419,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A5_1"
         android:id="@+id/v2Ex1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Dx1"
@@ -428,7 +431,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A6_1"
         android:id="@+id/v2Fx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ex1"
@@ -440,7 +443,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A7_1"
         android:id="@+id/v2Gx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Fx1"
@@ -452,7 +455,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A8_1"
         android:id="@+id/v2Hx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Gx1"
@@ -464,7 +467,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A9_1"
         android:id="@+id/v2Ix1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Hx1"
@@ -476,7 +479,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/A10_1"
         android:id="@+id/v2Jx1"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ix1"
@@ -498,7 +501,7 @@
     <!--СЕТКА 2-->
 
     <view
-        android:text="  "
+        android:text="@string/B1_1"
         android:id="@+id/v2Ax2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v22x0"
@@ -510,7 +513,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B2_1"
         android:id="@+id/v2Bx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ax2"
@@ -522,7 +525,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B3_1"
         android:id="@+id/v2Cx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Bx2"
@@ -534,7 +537,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B4_1"
         android:id="@+id/v2Dx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Cx2"
@@ -546,7 +549,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B5_1"
         android:id="@+id/v2Ex2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Dx2"
@@ -558,7 +561,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B6_1"
         android:id="@+id/v2Fx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ex2"
@@ -570,7 +573,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B7_1"
         android:id="@+id/v2Gx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Fx2"
@@ -582,7 +585,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B8_1"
         android:id="@+id/v2Hx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Gx2"
@@ -594,7 +597,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B9_1"
         android:id="@+id/v2Ix2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Hx2"
@@ -606,7 +609,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/B10_1"
         android:id="@+id/v2Jx2"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ix2"
@@ -624,7 +627,7 @@
     <!--СЕТКА 3-->
 
     <view
-        android:text="  "
+        android:text="@string/C1_1"
         android:id="@+id/v2Ax3"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v23x0"
@@ -636,7 +639,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/C2_1"
         android:id="@+id/v2Bx3"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Ax3"
@@ -648,7 +651,7 @@
     </view>
 
     <view
-        android:text="  "
+        android:text="@string/C3_1"
         android:id="@+id/v2Cx3"
         class="android.widget.TextView"
         app:layout_constraintTop_toBottomOf="@id/v2Bx3"

@@ -1,4 +1,28 @@
 <resources>
     <string name="app_name">SHIPWAR</string>
     <string name="A1" />
+    <string name="A2" />
+    <string name="A1_1" />
+    <string name="A2_1" />
+    <string name="A3_1" />
+    <string name="A4_1" />
+    <string name="A5_1" />
+    <string name="A6_1" />
+    <string name="A7_1" />
+    <string name="A8_1" />
+    <string name="A9_1" />
+    <string name="A10_1" />
+    <string name="B1_1" />
+    <string name="B2_1" />
+    <string name="B3_1" />
+    <string name="B4_1" />
+    <string name="B5_1" />
+    <string name="B6_1" />
+    <string name="B7_1" />
+    <string name="B8_1" />
+    <string name="B9_1" />
+    <string name="B10_1" />
+    <string name="C1_1" />
+    <string name="C2_1" />
+    <string name="C3_1" />
 </resources>

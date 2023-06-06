@@ -11,8 +11,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SHIPWAR"
         tools:targetApi="31" >
+
         <activity
-            android:name=".MainActivity"
+            android:name=".win_player2"
+            android:exported="false" />
+
+        <activity
+            android:name=".win_player1"
+            android:exported="false" />
+
+        <activity
+            android:name=".ship_position_menu"
+            android:exported="false" />
+
+        <activity
+            android:name=".ship_position_menu_2"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity_main"
+            android:exported="false" />
+
+        <activity
+            android:name=".game_menu"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +45,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
     </application>
 
 </manifest>
