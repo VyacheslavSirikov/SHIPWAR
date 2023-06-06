@@ -15,7 +15,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:text="ИГРОК 1"
+        android:text="ИГРОК 2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/TOP_MARGIN"
