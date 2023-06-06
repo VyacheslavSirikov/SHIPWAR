@@ -15,8 +15,8 @@ public class activity_main extends AppCompatActivity implements View.OnClickList
     int[][] values4 = new int[10][10];
     int[][] values2;
     int[][] values;
-    int counter1 = 4;
-    int counter2 = 4;
+    int counter1 = 20;
+    int counter2 = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
