@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+//gh
 
 public class activity_main extends AppCompatActivity implements View.OnClickListener {
     TextView[][] textViews1 = new TextView[10][10];
