@@ -33,7 +33,7 @@
 
     <TextView
         android:textColor="@color/black"
-        android:text="ПОБЕДИЛ ПЕРВЫЙ ИГРОК"
+        android:text="ПОБЕДИЛ ВТОРОЙ ИГРОК"
         android:textSize="30dp"
         android:background="#F4A460"
         android:id="@+id/WINP1"
